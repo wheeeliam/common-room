@@ -59,7 +59,7 @@ export const ImageLabel = styled(RowContainer)<{ selected: boolean }>`
 `;
 
 export const BodyNumberText = styled(BodyText)`
-  width: 60px;
+  min-width: 60px;
 `;
 
 export const ImageContainer = styled.div``;
