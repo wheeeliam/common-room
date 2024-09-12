@@ -36,6 +36,19 @@ export const ImageNameText = styled.p`
   bottom: -25px;
 `;
 
+export const BackImageAction = styled.div`
+  position: absolute;
+  width: calc(50% - 25px);
+  height: 100%;
+  left: 25px;
+  z-index: 1;
+  cursor: pointer;
+`;
+export const NextImageAction = styled(BackImageAction)`
+  left: auto;
+  right: 25px;
+`;
+
 export const ImageLabels = styled.div`
   position: absolute;
   display: flex;

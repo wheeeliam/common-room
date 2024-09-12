@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   ImageBodyContainer,
   HeroImage,
@@ -6,6 +6,8 @@ import {
   ImageWrapper,
   ImageLabelNumberText,
   ImageLabels,
+  BackImageAction,
+  NextImageAction,
 } from "./styles";
 import Image01 from "../../../images/01.jpg";
 import Image02 from "../../../images/02.jpg";
@@ -31,6 +33,16 @@ export const ImageBody = ({
     <ImageBodyContainer>
       <ImageWrapper>
         <HeroImage id="image" src={allImages[currentImage]} />
+        <BackImageAction
+          onClick={() => {
+            changeCurrentImage((currentImage - 1 + 4) % 4);
+          }}
+        />
+        <NextImageAction
+          onClick={() => {
+            changeCurrentImage((currentImage + 1) % 4);
+          }}
+        />
         <ImageNameText>{allImageLabels[currentImage]}</ImageNameText>
         <ImageLabels>
           {allImageLabels.map((label, index) => {
