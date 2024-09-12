@@ -55,6 +55,9 @@ export const ImageLabels = styled.div`
   flex-direction: column;
   left: 0;
   bottom: -5px;
+  > * + * {
+    margin-top: 4px;
+  }
 `;
 
 export const ImageLabelNumberText = styled.p<{ selected: boolean }>`
