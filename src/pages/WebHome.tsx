@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Body } from "../components/Body";
 
-export const Home = () => {
+export const WebHome = () => {
   return (
     <HomeContainer>
       <HeaderFooterPanel>

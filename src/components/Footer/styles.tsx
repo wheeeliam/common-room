@@ -21,6 +21,7 @@ export const AnchorText = styled.a`
   letter-spacing: -0.03em;
   text-align: left;
   color: black;
+  text-underline-offset: 3px;
   &:hover {
     cursor: pointer;
     color: #33ea00;

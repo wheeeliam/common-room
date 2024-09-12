@@ -1,0 +1,1 @@
+export { InfoBody } from "./InfoBody";
