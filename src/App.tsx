@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={width > 800 ? <WebHome /> : <MobileHome />} />
+        <Route path="/" element={width > 1024 ? <WebHome /> : <MobileHome />} />
       </Routes>
     </Router>
   );
