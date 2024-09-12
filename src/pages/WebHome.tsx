@@ -19,8 +19,9 @@ export const WebHome = () => {
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: calc(100% - 120px);
   max-width: 100%;
+  padding: 60px;
 `;
 
 const HeaderFooterPanel = styled.div`
