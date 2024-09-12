@@ -43,6 +43,7 @@ export const ImageLabel = styled(RowContainer)<{ selected: boolean }>`
   line-height: 19.36px;
   letter-spacing: -0.03em;
   text-align: left;
+  width: fit-content;
 
   color: ${(props) => (props.selected ? "#33ea00" : "#000000")};
 
