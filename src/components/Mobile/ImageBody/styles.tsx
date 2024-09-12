@@ -54,9 +54,9 @@ export const ImageLabels = styled.div`
   display: flex;
   flex-direction: column;
   left: 0;
-  bottom: -5px;
+  bottom: -4px;
   > * + * {
-    margin-top: 4px;
+    margin-top: 3px;
   }
 `;
 
