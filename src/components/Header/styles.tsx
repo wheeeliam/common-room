@@ -15,8 +15,7 @@ export const TextContainer = styled(ColumnContainer)`
 `;
 
 export const BodyTextContainer = styled(TextContainer)`
-  margin-left: 4rem;
-  width: 428px;
+  max-width: 360px;
 `;
 
 export const BodyText = styled.p`
@@ -34,4 +33,4 @@ export const HeaderText = styled(BodyText)`
   font-size: 24px;
 `;
 
-export const HeaderContainer = styled(RowContainer)``;
+export const HeaderContainer = styled(ColumnContainer)``;

@@ -7,17 +7,25 @@ import { Body } from "../components/Body";
 export const Home = () => {
   return (
     <HomeContainer>
-      <Header />
+      <HeaderFooterPanel>
+        <Header />
+        <Footer />
+      </HeaderFooterPanel>
       <Body />
-      <Footer />
     </HomeContainer>
   );
 };
 
 const HomeContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
-  align-items: space-between;
-  max-width: 1200px;
+  max-width: 100%;
+`;
+
+const HeaderFooterPanel = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 `;

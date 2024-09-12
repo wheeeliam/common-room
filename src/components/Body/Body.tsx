@@ -3,19 +3,18 @@ import {
   BodyText,
   ImageLabels,
   BodyContainer,
-  ImageContainer,
   ImageLabel,
   BodyNumberText,
+  HeroImage,
 } from "./styles";
+import Image01 from "../../images/01.jpg";
+import Image02 from "../../images/02.jpg";
+import Image03 from "../../images/03.jpg";
+import Image04 from "../../images/04.jpg";
 
 export const Body = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
-  const allImages = [
-    "https://drive.google.com/thumbnail?id=1725fqpJC35fJqcWBcNA_coMU4fw4DY-M&sz=w640",
-    "https://drive.google.com/thumbnail?id=178C2bxE4157YXSJPrMvgfq6OoPYra__X&sz=w640",
-    "https://drive.google.com/thumbnail?id=174h0xowz1azjdHgrm7ZeeBE477juF4fB&sz=w640",
-    "https://drive.google.com/thumbnail?id=176ni-7w0TLZc70TdjJFWtVwu3rYmLZm4&sz=w640",
-  ];
+  const allImages = [Image01, Image02, Image03, Image04];
   const allImageLabels = [
     "House of Thoroughfare Rooms",
     "Hejduk in Clifton Hill",
@@ -30,6 +29,7 @@ export const Body = () => {
 
   return (
     <BodyContainer>
+      <HeroImage id="image" src={allImages[currentImage]} />
       <ImageLabels>
         {allImageLabels.map((label, index) => {
           return (
@@ -44,9 +44,6 @@ export const Body = () => {
           );
         })}
       </ImageLabels>
-      <ImageContainer>
-        <img id="image" src={allImages[currentImage]} />
-      </ImageContainer>
     </BodyContainer>
   );
 };

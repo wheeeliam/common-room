@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
-  padding: 2rem 3rem;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   > * {
