@@ -33,7 +33,7 @@ export const ImageNameText = styled.p`
   text-align: center;
 
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
 `;
 
 export const BackImageAction = styled.div`
@@ -53,7 +53,8 @@ export const ImageLabels = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 0;
+  align-items: end;
+  left: -1px;
   bottom: -4px;
   > * + * {
     margin-top: 3px;
