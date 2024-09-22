@@ -24,6 +24,6 @@ export const AnchorText = styled.a`
   text-underline-offset: 3px;
   &:hover {
     cursor: pointer;
-    color: #33ea00;
+    color: #d5bf55;
   }
 `;

@@ -6,10 +6,31 @@ export const InfoBody = () => {
   return (
     <InfoPage>
       <InfoText>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Elementum finibus
-        sodales eu velit augue; torquent quisque. Suspendisse tempor ultricies
-        enim nam a neque rhoncus. Elementum finibus sodales eu velit augue;
-        torquent quisque.
+        Our approach to image-making is an exercise in control, refocusing the
+        image as a representation of considered architectural decisions.
+        <br />
+        <br />
+        Door
+        <br />
+        Window
+        <br />
+        Opening
+        <br />
+        Wall
+        <br />
+        Room/s
+        <br />
+        Plan
+        <br />
+        Volume
+        <br />
+        Proportion
+        <br />
+        Order
+        <br />
+        Rhythm
+        <br />
+        ...
       </InfoText>
       <Footer />
     </InfoPage>

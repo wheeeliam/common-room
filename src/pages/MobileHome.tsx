@@ -72,9 +72,9 @@ const ActionText = styled.p<{ hold?: boolean }>`
   text-decoration: underline;
   &:hover {
     cursor: pointer;
-    color: #33ea00;
+    color: #d5bf55;
   }
-  color: ${(props) => (props.hold ? "#33ea00" : "#000000")};
+  color: ${(props) => (props.hold ? "#D5BF55" : "#000000")};
 `;
 
 const BackText = styled(ActionText)`

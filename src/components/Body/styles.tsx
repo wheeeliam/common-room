@@ -48,12 +48,12 @@ export const ImageLabel = styled(RowContainer)<{ selected: boolean }>`
   text-align: left;
   width: fit-content;
 
-  color: ${(props) => (props.selected ? "#33ea00" : "#000000")};
+  color: ${(props) => (props.selected ? "#D5BF55" : "#000000")};
 
   &:hover {
     * {
       cursor: pointer;
-      color: #33ea00;
+      color: #d5bf55;
     }
   }
 `;

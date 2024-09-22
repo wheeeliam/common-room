@@ -6,7 +6,9 @@ export const Footer = () => {
     <FooterContainer>
       <BodyText>info@commonroom-images.com</BodyText>
       <BodyText>+61 404 941 042</BodyText>
-      <AnchorText>Instagram</AnchorText>
+      <AnchorText href="https://www.instagram.com/commonroom.images/">
+        Instagram
+      </AnchorText>
     </FooterContainer>
   );
 };
