@@ -17,6 +17,8 @@ import Image05 from "../../../images/05.jpg";
 import Image06 from "../../../images/06.jpg";
 import Image07 from "../../../images/07.jpg";
 
+const AMOUNT_OF_IMAGES = 7;
+
 export const ImageBody = ({
   currentImage,
   changeCurrentImage,
@@ -49,12 +51,14 @@ export const ImageBody = ({
         <HeroImage id="image" src={allImages[currentImage]} />
         <BackImageAction
           onClick={() => {
-            changeCurrentImage((currentImage - 1 + 4) % 4);
+            changeCurrentImage(
+              (currentImage - 1 + AMOUNT_OF_IMAGES) % AMOUNT_OF_IMAGES
+            );
           }}
         />
         <NextImageAction
           onClick={() => {
-            changeCurrentImage((currentImage + 1) % 4);
+            changeCurrentImage((currentImage + 1) % AMOUNT_OF_IMAGES);
           }}
         />
         <ImageNameText>{allImageLabels[currentImage]}</ImageNameText>

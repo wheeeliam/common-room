@@ -15,8 +15,8 @@ export const Header = () => {
       </TextContainer>
       <BodyTextContainer>
         <BodyText>
-          Our approach to image-making is an exercise in control, refocusing the
-          image as a representation of considered architectural decisions.
+          Our approach to image making is to refocus the image as a thoughtful
+          composition of considered architectural decisions.
           <br />
           <br />
           Door

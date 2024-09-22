@@ -6,8 +6,8 @@ export const InfoBody = () => {
   return (
     <InfoPage>
       <InfoText>
-        Our approach to image-making is an exercise in control, refocusing the
-        image as a representation of considered architectural decisions.
+        Our approach to image making is to refocus the image as a thoughtful
+        composition of considered architectural decisions.
         <br />
         <br />
         Door
