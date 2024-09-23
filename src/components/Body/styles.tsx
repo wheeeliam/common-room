@@ -64,7 +64,8 @@ export const BodyNumberText = styled(BodyText)`
 
 export const ImageContainer = styled.div``;
 
-export const HeroImage = styled.img`
+export const HeroImage = styled.img<{ show: boolean }>`
+  display: ${(props) => (props.show ? "block" : "none")};
   position: absolute;
   max-height: min(1000px, calc(100vh - 204px));
   max-width: min(800px, calc(100% / 4 * 3 - 120px));

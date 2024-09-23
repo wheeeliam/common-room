@@ -18,10 +18,10 @@ export const ImageWrapper = styled.div`
   align-items: center;
 `;
 
-export const HeroImage = styled.img`
+export const HeroImage = styled.img<{ show: boolean }>`
+  display: ${(props) => (props.show ? "block" : "none")};
   width: calc(100% - 50px);
   height: auto;
-  display: block;
 `;
 
 export const ImageNameText = styled.p`

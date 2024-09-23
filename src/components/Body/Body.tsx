@@ -43,7 +43,13 @@ export const Body = () => {
 
   return (
     <BodyContainer>
-      <HeroImage id="image" src={allImages[currentImage]} />
+      <HeroImage show={currentImage === 0} id="image" src={allImages[0]} />
+      <HeroImage show={currentImage === 1} id="image" src={allImages[1]} />
+      <HeroImage show={currentImage === 2} id="image" src={allImages[2]} />
+      <HeroImage show={currentImage === 3} id="image" src={allImages[3]} />
+      <HeroImage show={currentImage === 4} id="image" src={allImages[4]} />
+      <HeroImage show={currentImage === 5} id="image" src={allImages[5]} />
+      <HeroImage show={currentImage === 6} id="image" src={allImages[6]} />
       <ImageLabels>
         {allImageLabels.map((label, index) => {
           return (
