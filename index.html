@@ -21,11 +21,18 @@
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.js"></script>
     <script>
-      var font = new FontFaceObserver("Inter");
+      // Watch both fonts
+      var interFont = new FontFaceObserver("Inter");
+      var archivoFont = new FontFaceObserver("Archivo");
 
-      font.load().then(function () {
-        document.documentElement.classList.add("fonts-loaded");
-      });
+      // Wait for both fonts to load
+      Promise.all([interFont.load(), archivoFont.load()])
+        .then(function () {
+          document.documentElement.classList.add("fonts-loaded");
+        })
+        .catch(function (err) {
+          console.warn("Some fonts failed to load: ", err);
+        });
     </script>
   </body>
 </html>

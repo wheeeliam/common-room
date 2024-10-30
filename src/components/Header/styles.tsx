@@ -29,7 +29,8 @@ export const BodyText = styled.p`
 
 export const HeaderText = styled(BodyText)`
   font-weight: 600;
-  font-family: "Archivo";
+  font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   font-size: 24px;
 `;
 

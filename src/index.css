@@ -5,7 +5,6 @@ html, body {
 }
 
 body {
-  font-family: 'Inter', 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
@@ -18,7 +17,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%; /* This might be redundant with flex: 1, but included for clarity */
+  height: 100%;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -45,6 +44,7 @@ a {
   text-decoration: underline;
 }
 
+/* Font declarations */
 @font-face {
   font-family: 'Inter';
   src: url('https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2') format('woff2');
@@ -70,7 +70,7 @@ a {
 }
 
 @font-face {
-  font-family: 'Archivo',;
+  font-family: 'Archivo';
   src: url('https://fonts.gstatic.com/s/archivo/v18/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sLySOxK-vA.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -85,12 +85,16 @@ a {
   font-display: swap;
 }
 
-/* Add more @font-face rules for different weights if needed */
-
+/* Font loading states */
 body {
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .fonts-loaded body {
-  font-family: 'Inter', 'Archivo', sans-serif;
+  font-family: 'Inter', 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Utility classes for Archivo */
+.font-archivo {
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
