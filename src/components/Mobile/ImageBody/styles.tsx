@@ -20,7 +20,7 @@ export const ImageWrapper = styled.div`
 
 export const HeroImage = styled.img<{ show: boolean }>`
   display: ${(props) => (props.show ? "block" : "none")};
-  width: calc(100% - 50px);
+  width: 100%;
   height: auto;
 `;
 
@@ -38,15 +38,15 @@ export const ImageNameText = styled.p`
 
 export const BackImageAction = styled.div`
   position: absolute;
-  width: calc(50% - 25px);
+  width: 50%;
   height: 100%;
-  left: 25px;
+  left: 0px;
   z-index: 1;
   cursor: pointer;
 `;
 export const NextImageAction = styled(BackImageAction)`
   left: auto;
-  right: 25px;
+  right: 0px;
 `;
 
 export const ImageLabels = styled.div`

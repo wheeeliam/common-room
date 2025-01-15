@@ -9,6 +9,7 @@ export const InfoPage = styled.div`
   > * + * {
     margin-top: 50px;
   }
+  padding: 0 25px;
 `;
 
 export const InfoText = styled.p`

@@ -24,14 +24,14 @@ export const BodyText = styled.p``;
 export const ImageLabels = styled(ColumnContainer)`
   position: absolute;
   > * + * {
-    margin-top: 0.75rem;
+    margin-top: 6px;
   }
   right: 60px;
   bottom: 50%;
 
   left: min(
-    calc(-100% / 4 + 100vw / 2 + min(calc((100vh - 200px) / 5 * 4 / 2), 430px)),
-    calc(100% / 4 * 3)
+    calc(-100% / 4 + 100vw / 2 + min(calc((100vh - 200px) / 5 * 4 / 2), 380px)),
+    calc(100% / 4 * 3) - 20px
   );
   margin-left: auto;
   margin-right: auto;
@@ -41,9 +41,7 @@ export const ImageLabels = styled(ColumnContainer)`
 
 export const ImageLabel = styled(RowContainer)<{ selected: boolean }>`
   font-family: Inter;
-  font-size: 16px;
   font-weight: 600;
-  line-height: 19.36px;
   letter-spacing: -0.03em;
   text-align: left;
   width: fit-content;
@@ -56,10 +54,15 @@ export const ImageLabel = styled(RowContainer)<{ selected: boolean }>`
       color: #d5bf55;
     }
   }
+
+  * {
+    line-height: 14px;
+    font-size: 12px;
+  }
 `;
 
 export const BodyNumberText = styled(BodyText)`
-  min-width: 60px;
+  min-width: 25px;
 `;
 
 export const ImageContainer = styled.div``;

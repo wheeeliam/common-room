@@ -41,12 +41,12 @@ const HomeContainer = styled.div`
   flex-direction: column;
   max-width: 100%;
   max-height: 100%;
-  padding: 50px 25px 0 25px;
   height: calc(100% - 50px);
   position: relative;
 `;
 
 const Header = styled.div`
+  padding: 50px 25px 0 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,4 +80,5 @@ const ActionText = styled.p<{ hold?: boolean }>`
 const BackText = styled(ActionText)`
   position: absolute;
   bottom: 50px;
+  padding: 0 25px;
 `;
