@@ -2,10 +2,7 @@ import React from "react";
 import {
   ImageBodyContainer,
   HeroImage,
-  ImageNameText,
   ImageWrapper,
-  ImageLabelNumberText,
-  ImageLabels,
   BackImageAction,
   NextImageAction,
 } from "./styles";
@@ -22,8 +19,6 @@ import Image10 from "../../../images/10.jpg";
 import Image11 from "../../../images/11.jpg";
 import Image12 from "../../../images/12.jpg";
 import Image13 from "../../../images/13.jpg";
-
-const AMOUNT_OF_IMAGES = 7;
 
 export const ImageBody = ({
   currentImage,
@@ -62,6 +57,8 @@ export const ImageBody = ({
     "Riff Raff 3+4",
     "820 Nicholson",
   ];
+
+  const AMOUNT_OF_IMAGES = allImages.length;
 
   return (
     <ImageBodyContainer>
