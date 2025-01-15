@@ -30,7 +30,9 @@ export const ImageLabels = styled(ColumnContainer)`
   bottom: 50%;
 
   left: min(
-    calc(-100% / 4 + 100vw / 2 + min(calc((100vh - 200px) / 5 * 4 / 2), 380px)),
+    calc(
+      -100% / 4 + 100vw / 2 + min(calc((100vh - 200px) / 5 * 4 / 2) - 20px, 380px)
+    ),
     calc(100% / 4 * 3) - 20px
   );
   margin-left: auto;
