@@ -31,7 +31,6 @@ export const Body = () => {
     Image05,
     Image06,
     Image07,
-    Image07,
     Image08,
     Image09,
     Image10,
