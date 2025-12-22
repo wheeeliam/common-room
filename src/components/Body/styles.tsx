@@ -74,7 +74,7 @@ export const HeroImage = styled.img<{ show: boolean; horizontal: boolean }>`
   position: absolute;
   max-height: ${(props) =>
     props.horizontal
-      ? "min(800px, calc(100vh/2 - 20px))"
+      ? "min(800px, calc(100vh / 2 - 80px))"
       : "min(1000px, calc(100vh - 204px))"};
   max-width: ${(props) =>
     props.horizontal
