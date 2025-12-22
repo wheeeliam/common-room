@@ -69,14 +69,28 @@ export const BodyNumberText = styled(BodyText)`
 
 export const ImageContainer = styled.div``;
 
-export const HeroImage = styled.img<{ show: boolean }>`
+export const HeroImage = styled.img<{ show: boolean; horizontal: boolean }>`
   display: ${(props) => (props.show ? "block" : "none")};
   position: absolute;
-  max-height: min(1000px, calc(100vh - 204px));
+  max-height: ${(props) =>
+    props.horizontal
+      ? "min(800px, calc(100vh/2 - 20px))"
+      : "min(1000px, calc(100vh - 204px))"};
+  max-width: ${(props) =>
+    props.horizontal
+      ? "min(800px, calc(100% / 4 * 2 - 60px))"
+      : "min(800px, calc(100% / 4 * 3 - 120px))"};
   max-width: min(800px, calc(100% / 4 * 3 - 120px));
   left: calc(-100% / 4);
   margin-left: auto;
   margin-right: auto;
   right: 0;
   text-align: center;
+  /* 
+  @media screen and (max-width: 1280px) {
+    max-width: ${(props) =>
+    props.horizontal
+      ? "min(800px, calc(100% / 4 * 2))"
+      : "min(800px, calc(100% / 4 * 3 - 120px))"};
+  } */
 `;

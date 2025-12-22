@@ -17,9 +17,6 @@ import Image07 from "../../images/07.jpg";
 import Image08 from "../../images/08.jpg";
 import Image09 from "../../images/09.jpg";
 import Image10 from "../../images/10.jpg";
-import Image11 from "../../images/11.jpg";
-import Image12 from "../../images/12.jpg";
-import Image13 from "../../images/13.jpg";
 
 export const Body = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
@@ -34,24 +31,20 @@ export const Body = () => {
     Image08,
     Image09,
     Image10,
-    Image11,
-    Image12,
-    Image13,
   ];
-  const allImageLabels = [
-    "Fitzroy Brick Studio House. KKAP",
-    "b2b Booth",
-    "House of Thoroughfare Rooms",
-    "Fitzroy Brick Studio House. KKAP",
-    "Kreuzberg Tower",
-    "b2b Booth",
-    "Fitzroy Brick Studio House. KKAP",
-    "Double House",
-    "Private House, Lincolnshire",
-    "Fitzroy Brick Studio House. KKAP",
-    "Kreuzberg Tower",
-    "Riff Raff 3+4",
-    "820 Nicholson",
+
+  type imageDescription = { label: string; horizontal: boolean };
+  const allImageLabels: imageDescription[] = [
+    { label: "West Gallery. Office Fora.", horizontal: true },
+    { label: "Love Tea Concept Store. TCYK.", horizontal: true },
+    { label: "Bidborough Cricket Pavilion. AOMD.", horizontal: false },
+    { label: "New Gallery. EBBA.", horizontal: false },
+    { label: "Fitzroy Brick Studio House. KKAP.", horizontal: false },
+    { label: "House A. Freese Studio.", horizontal: false },
+    { label: "West Gallery. Office Fora.", horizontal: true },
+    { label: "Farmhouse. Billy Maynard Architects.", horizontal: false },
+    { label: "Love Tea Concept Store. TCYK.", horizontal: false },
+    { label: "b2b Booth. SPG.", horizontal: false },
   ];
 
   const changeCurrentImage = (imageNumber: number) => {
@@ -61,17 +54,18 @@ export const Body = () => {
 
   return (
     <BodyContainer>
-      {allImageLabels.map((_, index) => {
+      {allImageLabels.map((img, index) => {
         return (
           <HeroImage
             show={currentImage === index}
+            horizontal={img.horizontal}
             id="image"
             src={allImages[index]}
           />
         );
       })}
       <ImageLabels>
-        {allImageLabels.map((label, index) => {
+        {allImageLabels.map((image, index) => {
           return (
             <ImageLabel
               key={index}
@@ -82,7 +76,7 @@ export const Body = () => {
                 {index < 9 && "0"}
                 {index + 1}
               </BodyNumberText>
-              <BodyText>{label}</BodyText>
+              <BodyText>{image.label}</BodyText>
             </ImageLabel>
           );
         })}
