@@ -16,9 +16,6 @@ import Image07 from "../../../images/07.jpg";
 import Image08 from "../../../images/08.jpg";
 import Image09 from "../../../images/09.jpg";
 import Image10 from "../../../images/10.jpg";
-import Image11 from "../../../images/11.jpg";
-import Image12 from "../../../images/12.jpg";
-import Image13 from "../../../images/13.jpg";
 
 export const ImageBody = ({
   currentImage,
@@ -38,24 +35,18 @@ export const ImageBody = ({
     Image08,
     Image09,
     Image10,
-    Image11,
-    Image12,
-    Image13,
   ];
   const allImageLabels = [
-    "Fitzroy Brick Studio House. KKAP",
-    "b2b Booth",
-    "House of Thoroughfare Rooms",
-    "Fitzroy Brick Studio House. KKAP",
-    "Kreuzberg Tower",
-    "b2b Booth",
-    "Fitzroy Brick Studio House. KKAP",
-    "Double House",
-    "Private House, Lincolnshire",
-    "Fitzroy Brick Studio House. KKAP",
-    "Kreuzberg Tower",
-    "Riff Raff 3+4",
-    "820 Nicholson",
+    "West Gallery. Office Fora.",
+    "Love Tea Concept Store. TCYK.",
+    "Bidborough Cricket Pavilion. AOMD.",
+    "New Gallery. EBBA.",
+    "Fitzroy Brick Studio House. KKAP.",
+    "House A. Freese Studio.",
+    "West Gallery. Office Fora.",
+    "Farmhouse. Billy Maynard Architects.",
+    "Love Tea Concept Store. TCYK.",
+    "b2b Booth. SPG.",
   ];
 
   const AMOUNT_OF_IMAGES = allImages.length;

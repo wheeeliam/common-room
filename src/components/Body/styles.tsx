@@ -69,11 +69,23 @@ export const BodyNumberText = styled(BodyText)`
 
 export const ImageContainer = styled.div``;
 
-export const HeroImage = styled.img<{ show: boolean }>`
+export const HeroImage = styled.img<{
+  show: boolean;
+  horizontal: boolean;
+  square?: boolean;
+}>`
   display: ${(props) => (props.show ? "block" : "none")};
   position: absolute;
-  max-height: min(1000px, calc(100vh - 204px));
-  max-width: min(800px, calc(100% / 4 * 3 - 120px));
+  max-height: ${(props) =>
+    props.square
+      ? "min(800px, calc(100vh / 2 + 72px))"
+      : props.horizontal
+      ? "min(800px, calc(100vh / 2 - 80px))"
+      : "min(1000px, calc(100vh - 204px))"};
+  max-width: ${(props) =>
+    props.square
+      ? "min(800px, calc(100% / 4 * 3 - 120px))"
+      : "min(800px, calc(100% / 4 * 3 - 120px))"};
   left: calc(-100% / 4);
   margin-left: auto;
   margin-right: auto;
