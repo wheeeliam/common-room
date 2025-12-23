@@ -41,7 +41,7 @@ export const Body = () => {
     { label: "New Gallery. EBBA.", horizontal: false },
     { label: "Fitzroy Brick Studio House. KKAP.", horizontal: false },
     { label: "House A. Freese Studio.", horizontal: false },
-    { label: "West Gallery. Office Fora.", horizontal: true },
+    { label: "West Gallery. Office Fora.", horizontal: false },
     { label: "Farmhouse. Billy Maynard Architects.", horizontal: false },
     { label: "Love Tea Concept Store. TCYK.", horizontal: false },
     { label: "b2b Booth. SPG.", horizontal: false },
@@ -61,6 +61,7 @@ export const Body = () => {
             horizontal={img.horizontal}
             id="image"
             src={allImages[index]}
+            square={index === 6}
           />
         );
       })}
